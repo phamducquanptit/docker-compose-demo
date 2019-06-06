@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  webreactjs:
+    image: af1205224676
+    build: .
+    ports:
+      - 3000:3000
+    restart: always
+  servergo:
+    image: cef5deda0834
+    build: .
+    ports:
+      - 8080:8080
+    restart: always
